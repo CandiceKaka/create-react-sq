@@ -1,0 +1,304 @@
+.c-miniHeader_container {
+    width: 100%;
+    background: #f5f5f5;
+    height: 32px;
+    line-height: 32px;
+    font-size: 12px;
+    margin: 0 auto;
+    a {
+        text-decoration: none;
+    }
+    ol, ul, li {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    .c-miniHeader_content {
+        width: 1200px;
+        margin: 0 auto;
+        .c-miniHeader_left {
+            float: left;
+            line-height: 28px;
+            font-size: 100%;
+            margin: 0;
+            .c-logo_img {
+                vertical-align: middle;
+            }
+        }
+    }
+    
+    .c-miniHeader_center {
+        float: left;
+        margin-left: 82px;
+        a {
+            color: #666;
+            cursor: pointer;
+            text-decoration: none;
+            &:hover {
+                color: #1fb5ab
+            }
+        }
+    }
+    .miniHeader_notLogin {
+        .c-miniHeader_center {
+            margin-left: 0;
+        }
+    }
+    .c-miniHeader_right {
+        float: right;
+        margin-right: 14px;
+        height: 32px;
+        line-height: 31px;
+        .c-miniHeader_right_li {
+            float: left;
+            a {
+                position: relative;
+                color: #666;
+                text-decoration: none;
+            }
+            & > span {
+                width: 22px;
+                height: 20px;
+                display: inline-block;
+                margin: 0 5px 2px 20px;
+                vertical-align: middle;
+            }
+            .c-miniHeaderRight_person {
+                width: 26px;
+                height: 26px;
+                display: block;
+                float: left;
+                margin: 3px 0 0 6px;
+                line-height: 26px;
+                border-radius: 50% 50%;
+                background-color: #fff;
+                img {
+                    width: 24px;
+                    height: 24px;
+                    line-height: 24px;
+                    margin: 1px 0 0 1px;
+                    display: block;
+                    border-radius: 50% 50%;
+                }
+            }
+            .c-miniHeader_shoppingcart{ // 购物车logo样式
+                color:#666;
+                margin-right: 5px;
+                margin-bottom: 2px;
+                margin-left: 20px;
+            }
+            .c-miniHeader_noticeLogo{ // 消息logo样式
+                color:#666;
+                margin-right: 5px;
+                margin-bottom: 2px;
+                margin-left: 20px;
+            }
+            .c-miniHeader_msgMarginRight{
+                margin-right: 32px;
+            }
+            .cartshop {
+                background: url('https://static.leke.cn/images/home/header.png') no-repeat 0 -46px;
+            }
+            .headernew {
+                background: url('https://static.leke.cn/images/home/header.png') no-repeat -46px 1px;
+            }
+            .c-miniHeader_masseagDoubleNum { // 消息未读数为多位数时 为椭圆形背景样式
+                position: relative; 
+                height: 16px;
+                top: -5px; 
+                display: inline-block;
+                border-radius: 8px;
+                line-height: 14px; // 为了调整兼容性，由15换成14
+                background: #f7785f;
+                padding: 1px 6px;
+                color: #fff;
+                text-align: center;
+                margin-left: 2px;
+            }
+            .masseagSingleNum{ // 消息未读数为个位数时，为圆形背景样式
+                position: relative;
+                width: 16px;
+                height: 16px;
+                top: -5px;
+                display: inline-block;
+                margin-top: 2px;
+                margin-left: 2px;
+                border-radius: 8px;
+                line-height: 15px;
+                background: #f7785f;
+                color: #fff;
+                text-align: center;
+                
+            }
+            .hideMsgNum{
+                display: none;
+            }
+        }
+        
+        .c-miniHeader_userInfo {
+            margin-right: 8px;
+        }
+        .c-miniHeaderRight_listselect {
+            position: relative;
+            ul li {
+                &:hover {
+                    background: #d2f0ed!important;
+                }
+            }
+            &:hover {
+                .c-miniHeaderRight_select i {
+                    transform: rotate(180deg);
+                }
+                .c-miniHeader_userInfoSelect {
+                    display: inline-block;
+                }
+            } 
+            .c-miniHeaderRight_select {
+                height: 32px;
+                float: left;
+                text-align: center;
+                line-height: 32px;
+                span {
+                    display: inline-block;
+                    width: 54px;
+                    color: #666;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    height: 32px;
+                }
+                i {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    float: right;
+                    margin: 11px 10px 0 0;
+                    background: url('https://static.leke.cn/images/home/headerimg.png') no-repeat -230px -132px;
+                }
+            }
+            .c-miniHeaderRight_list {
+                position: absolute;
+                width: 122px;
+                top: 32px;
+                right: -20px;
+                padding: 0 9px;
+                display: none;
+                z-index: 10;
+                text-align: center;
+                background: #fff;
+                border-radius: 0 0 4px 4px;
+                box-shadow: 4px 4px 8px rgba(0,0,0,.1);
+                box-sizing: content-box;
+                .c-miniHeaderRight_list--active {
+                    background: url('https://static.leke.cn/images/home/check.png') no-repeat 6px 9px;
+                }
+                ul {
+                    border-bottom: #ccc 1px dashed;
+                    i {
+                        position: absolute;
+                        display: block;
+                        top: -6px;
+                        left: 64px;
+                        width: 14px;
+                        height: 6px;
+                        background: url('https://static.leke.cn/images/home/sizesan.png') no-repeat 0 0;
+                    }
+                    li {
+                        height: 26px;
+                        margin: 8px 0;
+                        line-height: 26px;
+                        font-size: 14px;
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+                        border-radius: 4px;
+                    }
+                }
+                .c-miniHeaderRight_logout {
+                    height: 26px;
+                    margin: 8px 0 10px 0;
+                    line-height: 26px;
+                    font-size: 14px;
+                    border-radius: 4px;
+                    color: #666;
+                    &:hover {
+                        background: #d2f0ed;
+                    }
+                }
+            }
+        }
+        .c-miniHeaderRight_role {
+            &:hover {
+                .c-miniHeader_spaceList {
+                    display: inline-block;
+                }
+                // 我的空间下拉框的小三角hover态时，进行180度旋转，以.c-li__selectii代替i标签，排除前面的小云朵iconfont
+                .c-miniHeader_mySpace .c-miniHeader_selectii{
+                    transform: rotate(180deg);
+                }
+            }
+            .c-miniHeader_mySpace{
+                width: 109px;
+                height: 32px;
+                line-height: 32px;
+                .c-miniHeader_spaceLogo{
+                    color:#666;
+                    margin: 0 10px 6px 0;
+                    display: inline-block;
+                    vertical-align: top;
+                }
+                .mySpace_headerspace {
+                    font-size: 20px;
+                    margin: 0 10px 6px 0;
+                }
+                & > span > a {
+                    width: 51px;
+                    display: inline-block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    text-decoration: none;
+                    text-align: center;
+                }
+            }
+            .c-miniHeader_selectii {
+                width: 10px;
+                height: 10px;
+                display: inline-block;
+                margin: 0 0 11px 9px;
+                background: url('https://static.leke.cn/images/home/headerimg.png') no-repeat -230px -132px;
+            }
+            .c-miniHeader_spaceList {
+                ul {
+                    border: none;
+                    li {
+                        padding: 0 10px 0 20px;
+                        text-align: left;
+                    }
+                }
+                i{
+                    position: absolute;
+                    display: block;
+                    top: -6px;
+                    left: 64px;
+                    width: 14px;
+                    height: 6px;
+                    background: url('https://static.leke.cn/images/home/sizesan.png') no-repeat 0 0;
+                }
+            }
+        }
+    }
+    .c-miniHeader_loginregister {
+        float: right;
+        .c-miniHeader_headlogin {
+            color: #0ba29a;
+        }
+        .c-miniHeader_headregister {
+            color: #666;
+        }
+    }
+    .c-miniHeader_line {
+        margin: 0 8px 0 8px;
+        color: #ccc;
+    }
+}
